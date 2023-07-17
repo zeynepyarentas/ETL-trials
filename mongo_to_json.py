@@ -1,6 +1,6 @@
 # pylint: disable=unspecified-encoding
 """
-This module contains code to insert data into the name_age.txt
+This module contains code to insert data into the name_age.json in json format
 
 Author: Zeynep Yaren Tas
 Date: 2023-07-16
@@ -27,7 +27,7 @@ for info in all_data:
     json_data = json.dumps(info, default=str)
     get_data.append(json_data)
 
-print(get_data)
-with open("name_age.txt", "w") as file:
+
+with open("name_age.json", "w") as file:
     for i in get_data:
         file.write(i + "\n")
