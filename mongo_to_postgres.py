@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Şifrelere erişim
+
 clusterName = os.getenv("cluster_name")
 hostt = os.getenv("host")
 portt = os.getenv("port")

@@ -39,5 +39,5 @@ engine = create_engine(
 )
 data.to_sql("musteri", engine, if_exists="append", index=False)
 
-# Close the MongoDB connection
+
 client.close()
